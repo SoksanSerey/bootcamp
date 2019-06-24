@@ -1,0 +1,3 @@
+46 - what if the file doesn't exist?
+50 - append: is it include date or not?
+regex101.com
