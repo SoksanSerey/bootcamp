@@ -32,9 +32,8 @@ def decrypt(x, y):
     """
     user_key = int(y)
     result = ""
-    plaintext_len = len(x)
-    if plaintext_len > 0:
-        for i in range(0, plaintext_len):
+    if len(x) > 0:
+        for i in range(0, len(x)):
             if x[i].isupper():
                 result += chr((ord(x[i]) - user_key - 65) % 26 + 65)
             elif (0 <= ord(x[i]) <= 64) or \
