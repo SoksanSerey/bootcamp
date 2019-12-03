@@ -1,4 +1,9 @@
 def decode(x):
+    """
+    This function is used to decode the caesar cipher algorithm by brute force and get all possible answer
+    :param x: cipher text
+    :return: dictionary of all possible answer
+    """
     dict1 = {}
     if len(x) > 0:
         for i in range(0, 26):
